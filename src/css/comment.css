@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+#root{
+    background-color: lightgrey;
+    min-height: 100%;
+
+}
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: clamp(50%,1000px,100%);
+}
+.comments{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.comment-frame{
+    display: flex;
+    gap: 1em;
+    padding: .5em;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.profile-pic{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: grey;
+}
+.third-row{
+    display: flex;
+    gap: .5em;
+    font-size: .8em;
+}
+.likes {
+    border-right: 1px solid black;
+    padding-right: .5em;
+}
+.edit{
+    border-right: 1px solid black;
+    padding-right: .5em;
+}
+.area{
+    width: 100%;
+    background-color: lightgrey;
+    padding: .25em;
+}
+.submit {
+    border: 1px solid white;
+    padding: .5em;
+    font-size: .8em;
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    overflow: auto;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: clamp(50%,700px,80%);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+textarea{
+    resize: none;
+    padding: .5em;
+    border-radius: .5em;
+}
